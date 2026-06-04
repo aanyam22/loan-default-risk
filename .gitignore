@@ -1,0 +1,16 @@
+data/raw/
+data/processed/
+data/splits/
+*.csv
+*.csv.gz
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+venv/
+.env
+*.pkl
+*.pt
+mlruns/
+.DS_Store
+.code-workspace
+
