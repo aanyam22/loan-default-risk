@@ -1,0 +1,45 @@
+---
+title: "Loan Default Risk Analysis"
+output: html_document
+date: "2026-06-05"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# Load Library
+```{r load-library}
+# Load required libraries
+library(ggplot2)
+library(dplyr)
+library(knitr)
+library(tibble)
+library(tidyr)
+library(gridExtra)
+library(patchwork)
+library(caret)
+library(tidyverse)
+```
+
+# Data Prep
+
+## Load Data
+```{r load-data}
+
+# load data
+df <- read.csv("/home/asorn/Nextcloud/Data Science/Projects/loan-default-risk/data/raw/sample_2007_to_2018Q4.csv")
+
+# standardize names
+names(df) <- make.names(names(df))
+```
+
+
+# EDA 
+
+```{r initial-eda-summary}
+# get descriptive stats
+summary(df)
+```
+
